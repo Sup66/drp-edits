@@ -8,7 +8,7 @@ I insist to use this map with an npc-control script and set peds and vehicles on
 It's pretty simple:
 1.Download
 2.Put it in your resource folder
-3.Type start CrimeMap in server.cfg lol
+3.Type start CrimeMap in server.cfg
 
 
 
