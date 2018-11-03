@@ -44,6 +44,7 @@ local function tr_tick(tr) -- do transformer tick
 
         -- check money
         local money_ok = (vRP.getMoney(user_id) >= recipe.in_money)
+        local vipmoney_ok = (vRP.getVipMoney(user_id >= recipe.in_vipmoney)
 
         -- weight check
         local out_witems = {}
@@ -62,7 +63,7 @@ local function tr_tick(tr) -- do transformer tick
           vRPclient.notify(tonumber(k), {lang.inventory.full()})
         end
 
-        if money_ok and reagents_ok and inventory_ok then -- do transformation
+        if money_ok and vipmoney_ok and reagents_ok and inventory_ok then -- do transformation
           tr.units = tr.units-1 -- sub work unit
 
           -- consume reagents
